@@ -7,7 +7,7 @@ export interface UserInstance extends Model {
     done: boolean;
 } 
 
-export const User = sequelize.define<UserInstance>('User', {
+export const Todo = sequelize.define<UserInstance>('User', {
     id: {
         primaryKey: true,
         autoIncrement: true,
@@ -24,3 +24,4 @@ export const User = sequelize.define<UserInstance>('User', {
     tableName: 'todos',
     timestamps: false    
 });
+
